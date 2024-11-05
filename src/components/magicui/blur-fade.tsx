@@ -2,7 +2,6 @@
 
 import {
   AnimatePresence,
-  MarginValue,
   motion,
   useInView,
   Variants,
@@ -20,7 +19,7 @@ interface BlurFadeProps {
   delay?: number
   yOffset?: number
   inView?: boolean
-  inViewMargin?: MarginValue
+  inViewMargin?: number
   blur?: string
 }
 const BlurFade = ({
@@ -31,11 +30,11 @@ const BlurFade = ({
   delay = 0,
   yOffset = 6,
   inView = false,
-  inViewMargin = "-50px",
+  inViewMargin = -50,
   blur = "6px",
 }: BlurFadeProps) => {
   const ref = useRef(null)
-  const inViewResult = useInView(ref, { once: true, margin: inViewMargin })
+  const inViewResult = useInView(ref, { once: true, margin: `${inViewMargin}px` })
   const isInView = !inView || inViewResult
   const defaultVariants: Variants = {
     hidden: { y: yOffset, opacity: 0, filter: `blur(${blur})` },
