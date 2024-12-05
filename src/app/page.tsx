@@ -171,7 +171,7 @@ export default function Page() {
                   href={DATA.contact.social.LinkedIn.url}
                   className="text-blue-500 hover:underline"
                 >
-                  or a direct message on LinkedIn
+                  or a direct message on LinkedIn{" "}
                 </Link>
                 or just call me on <b>{DATA.contact.tel}</b>
               </p>
