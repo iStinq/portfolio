@@ -4,14 +4,14 @@ import { HomeIcon } from "lucide-react"
 export const DATA = {
   name: "Oussama ASSOUAR",
   initials: "OA",
-  url: "https://dillion.io",
+  url: "https://assouaroussama-portfolio.vercel.app",
   location: "Essaouira, Morocco",
   locationLink: "https://www.google.com/maps/place/essaouira",
   description:
     "Software Engineering Student at INSEA. I love learning new things and concequering new challenges.",
   summary:
     "I'm a Data & Software Engineering student at INSEA with skills in Next.js, React, Typescript, Java, TailwindCSS, Supabase, Firebase, and Spring Boot. Passionate about technology and development, I'm motivated to apply my knowledge in real-world contexts and eager to continue learning and advancing in my field.",
-  avatarUrl: "/me.jpg",
+  avatarUrl: "/PicNew.jpg",
   skills: [
     "React",
     "Next.js",
